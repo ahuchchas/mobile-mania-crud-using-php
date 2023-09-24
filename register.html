@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="bg-success-subtle">
+        <div class="d-inline-flex align-items-center">
+            <img src="mobile.svg" alt="logo" height="25px" width="25px" class="">
+            <p id="logo">MOBILE MANIA</p>
+        </div>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <div class="form bg-success-subtle">
+            <h2>User Registration</h2>
+            <form action="registerAction.php" method="post" onsubmit="registerValidation(event)" id="regform">
+                <h6>Full Name:</h6>
+                <input type="text" id="r_name" name="name">
+                <p class="error" id="ename"></p>
+
+                <h6>Email:</h6>
+                <input type="text" id="r_email" name="email">
+                <p class="error" id="eemail"></p>
+
+                <h6>Mobile:</h6>
+                <input type="text" id="r_mobile" name="mobile">
+                <p class="error" id="emobile"></p>
+
+                <h6>Password:</h6>
+                <input type="text" id="r_pass" name="pass"><br>
+                <p class="error" id="epass"></p>
+
+                <h6>Confirm Password:</h6>
+                <input type="text" id="r_con_pass"><br>
+                <p class="error" id="e_con_pass"></p>
+
+
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>
